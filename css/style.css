@@ -1,0 +1,91 @@
+/* ---- MAIN STYLING ---- */
+body {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    margin: 0px;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 1080px;
+    padding: 40px 0 0;
+    margin: 0 auto;
+  }
+
+  section {
+    min-height: 100vh;
+    overflow: auto;
+  }
+  
+/* ---- FONTS ---- */
+
+  /* General */
+    h1 {
+      font-size: 8em;
+    }
+
+    h1, h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-weight: 300;
+    }
+    
+    h2 {
+      font-size: 3em;
+    }
+    
+    h3 {
+      font-size: 2em;
+      color: #1BC200;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    a {
+      color: #1BC200;
+    }
+
+  /* Section Specific */
+
+    #intro a {
+      font-size: 2rem;
+      color: #000;
+      float: right;
+    }
+
+/* ---- SECTION STYLING ---- */
+
+  /* Route */
+
+  #route {
+    background-color: #fff;
+  }
+
+  .route_boxes {
+  display: grid;
+  margin: 40px;
+  }
+
+  .route_boxes div {
+    border: 2px solid black;
+    padding: 40px;
+  }
+  .route_boxes .border {
+    border-bottom: 0;
+  }
+
+  /* Itinerary */
+
+  .kit_row {
+    display: flex;
+  }
+  
+  .kit_column {
+    flex: 50%;
+  }
