@@ -8,15 +8,15 @@ body {
   }
   
   main {
-    width: 90%;
-    max-width: 1080px;
-    padding: 40px 0 0;
+    width: 100%;
+    /* max-width: 1080px; */
     margin: 0 auto;
   }
 
   section {
     min-height: 100vh;
     overflow: auto;
+    padding: 60px 10%;
   }
   
 /* ---- FONTS ---- */
@@ -52,6 +52,8 @@ body {
       color: #1BC200;
     }
 
+  
+
   /* Section Specific */
 
     #intro a {
@@ -61,18 +63,15 @@ body {
 
 /* ---- SECTION STYLING ---- */
 
-.wrapper {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
   /* Intro */
 
+  /* #intro {
+  padding-top: 0;
+  padding-bottom: 0;
+  } */
+
   #intro img {
-    width: 35%;
+    width: 30%;
     mix-blend-mode: multiply;
     position: absolute;
     top: 25%;
@@ -80,21 +79,39 @@ body {
   }
 
   #intro div {
-    width: 60%;
+    width: 55%;
+  }
+
+  #intro a {
+    float: right;
+  }
+
+  #intro a:hover {
+    opacity: 0.5;    
+    transition: 0.3s;
   }
 
   /* Route */
 
   #route img {
     width: 100%;
+    padding: 50px 0;
   }
   #route {
     background-color: #fff;
   }
 
+  #route h3 {
+    width: 65%;
+    padding: 50px 0;
+    margin: auto;  
+  }
+
   .route_boxes {
     display: grid;
-    margin: 40px;
+    margin: 40px auto;
+    width: 70%;
+
   }
 
   .route_boxes div {
@@ -105,4 +122,38 @@ body {
     border-bottom: 0;
   }
 
+  .route_boxes a {
+    /* text-indent: 30px; */
+    padding-left: 2.5em;
+  }
+
   /* Itinerary */
+
+  #itinerary {
+    width: 60%;
+    margin: auto;
+    position: relative
+  }
+
+.wrapper {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  
+}
+
+#trackmarks {
+  opacity: 0.15;
+  width: 450px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* FOOTER */
+
+footer {
+padding: 0px 20px; 
+}
