@@ -1,34 +1,58 @@
 /* ---- MAIN STYLING ---- */
-body {
+
+  body {
     color: #000;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     background-color: #F2F2F2;
-    margin: 0px;
-  }
-  
-  main {
-    width: 100%;
-    /* max-width: 1080px; */
     margin: 0 auto;
+    width: 100%;
   }
 
   section {
     min-height: 100vh;
-    overflow: auto;
+    overflow: auto; /* section adjusts to content's height */
     padding: 60px 10%;
+  }
+
+/* Navigation */
+  
+  #topnav {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 99; /* nav displays above content at end of page */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* vertical alignment */
+      
+  }
+
+  #logo {max-height: 2.5em;}
+
+  #topnav a {padding: 10px;}
+
+  #topnav a:last-child {padding-right: 5%;}
+
+  .nav-link, #clock {
+    margin-left: auto; /* great little way to align #clock center and .nav-link right  */ 
   }
   
 /* ---- FONTS ---- */
 
   /* General */
-    h1 {
-      font-size: 8em;
-    }
+
+    h1, h2, h3, p {
+      font-weight: 300;
+    }  
 
     h1, h2 {
       font-family: 'Frank Ruhl Libre', serif;
-      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 8em;
+      max-width: 600px;
     }
     
     h2 {
@@ -39,13 +63,13 @@ body {
     h3 {
       font-size: 2em;
       color: #1BC200;
-      font-weight: 300;
     }
 
-    p {
+    p, nav a {
       font-size: 1.25em;
       line-height: 1.5;
-      font-weight: 300;
+      text-decoration: none;
+      color: #000;
     }
 
     a {
@@ -61,44 +85,50 @@ body {
       color: #000;
     }
 
+    .border p {
+      margin: 0; /* removes extra line-spacing w/o creating overlap when resizing page */
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+    
+
 /* ---- SECTION STYLING ---- */
 
   /* Intro */
 
-  /* #intro {
-  padding-top: 0;
-  padding-bottom: 0;
-  } */
-
   #intro img {
     width: 30%;
-    mix-blend-mode: multiply;
-    position: absolute;
+    mix-blend-mode: multiply; /* makes img background same as page */
+    position: absolute; 
     top: 25%;
     right: 0;
   }
 
   #intro div {
-    width: 55%;
+    width: 55%; /* !! TO DO -- find another way to do this for better resizing */
   }
 
   #intro a {
-    float: right;
+    float: right; 
   }
 
   #intro a:hover {
-    opacity: 0.5;    
+    color: #7BA684;
     transition: 0.3s;
   }
 
   /* Route */
 
+  #route {
+    background-color: #fff;
+  }
+
   #route img {
     width: 100%;
     padding: 50px 0;
-  }
-  #route {
-    background-color: #fff;
   }
 
   #route h3 {
@@ -111,7 +141,6 @@ body {
     display: grid;
     margin: 40px auto;
     width: 70%;
-
   }
 
   .route_boxes div {
@@ -119,12 +148,11 @@ body {
     padding: 40px;
   }
   .route_boxes .border {
-    border-bottom: 0;
+    border-bottom: 0; /* stops .route_boxes having thicker middle border */
   }
 
   .route_boxes a {
-    /* text-indent: 30px; */
-    padding-left: 2.5em;
+    padding-left: 2.5em; /* indents accommodation link */
   }
 
   /* Itinerary */
@@ -135,25 +163,28 @@ body {
     position: relative
   }
 
-.wrapper {
-  display: flex;
-}
 
-.column {
-  flex: 50%;
-  
-}
+  /*  .wrapper and .column make 
+      two equal columns */
+  .wrapper { 
+    display: flex; 
+  }
 
-#trackmarks {
-  opacity: 0.15;
-  width: 450px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+  .column {
+    flex: 50%; 
+  }
 
-/* FOOTER */
+  #trackmarks {
+    opacity: 0.15;
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-footer {
-padding: 0px 20px; 
-}
+  /* FOOTER */
+
+  footer {
+    padding: 0px 20px; 
+  }
+
