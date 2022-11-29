@@ -24,8 +24,7 @@
     z-index: 99; /* nav displays above content at end of page */
     display: flex;
     justify-content: space-between; 
-    align-items: center; /* vertical alignment */
-      
+    align-items: center; /* vertical alignment */    
   }
 
   #logo {max-height: 2.5em;}
@@ -42,11 +41,11 @@
 
   /* General */
 
-    h1, h2, h3, p {
+    h1, h2, h3, h4, p {
       font-weight: 300;
     }  
 
-    h1, h2 {
+    h1, h3 {
       font-family: 'Frank Ruhl Libre', serif;
     }
 
@@ -56,11 +55,16 @@
     }
     
     h2 {
+      font-size: 2em;
+      color: #1BC200;
+    }
+
+    h3 {
       text-align: center;
       font-size: 3em;
     }
-    
-    h3 {
+
+    h4 {
       font-size: 2em;
       color: #1BC200;
     }
@@ -85,7 +89,7 @@
       color: #000;
     }
 
-    .border p {
+    #route h3, .border p {
       margin: 0; /* removes extra line-spacing w/o creating overlap when resizing page */
     }
 
@@ -131,7 +135,7 @@
     padding: 50px 0;
   }
 
-  #route h3 {
+  #route h4 {
     width: 65%;
     padding: 50px 0;
     margin: auto;  
