@@ -76,8 +76,13 @@
       color: #000;
     }
 
-    a {
+    a, nav a:hover {
       color: #1BC200;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.6;
     }
 
   
@@ -112,7 +117,7 @@
   }
 
   #intro div {
-    width: 55%; /* !! TO DO -- find another way to do this for better resizing */
+    max-width: 600px;
   }
 
   #intro a {
@@ -120,7 +125,8 @@
   }
 
   #intro a:hover {
-    color: #7BA684;
+    color: #1BC200;
+    opacity: 0.5;
     transition: 0.3s;
   }
 
