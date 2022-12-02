@@ -29,7 +29,7 @@
 
   #logo {max-height: 2.5em;}
 
-  #topnav a {padding: 10px;}
+  #topnav a, #topnav p {padding: 0 10px;}
 
   #topnav a:last-child {padding-right: 5%;}
 
@@ -41,7 +41,7 @@
 
   /* General */
 
-    h1, h2, h3, h4, p {
+    h1, h2, h3, h4, p, a {
       font-weight: 300;
     }  
 
