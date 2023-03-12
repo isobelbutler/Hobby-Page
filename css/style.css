@@ -1,5 +1,9 @@
 /* ---- MAIN STYLING ---- */
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     color: #000;
     font-family: 'Inter', sans-serif;
