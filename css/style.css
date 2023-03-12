@@ -140,7 +140,7 @@
     background-color: #fff;
   }
 
-  #route img {
+  #route_map {
     width: 100%;
     padding: 50px 0;
   }
@@ -167,6 +167,11 @@
 
   .route_boxes a {
     padding-left: 2.5em; /* indents accommodation link */
+  }
+
+  .route_boxes img {
+    border-radius: 20px;
+    width: 100%;
   }
 
   /* Itinerary */
