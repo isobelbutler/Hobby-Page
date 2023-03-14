@@ -31,13 +31,13 @@ I enjoyed making this project, I was already fairly familiar with HTML and CSS f
     - Day 3 Box
   - Kit List
   - Footer
-2. Add styling to make replicate the Figma design.
+2. Add styling to replicate the Figma design.
   - Simple grid layout for the *.route_boxes*.
   - Padding to all sections.
   - Link Google Fonts.
   - Section specific styling e.g. background colours, extra padding, borders.
 3. Make Header fixed upon scroll.
-4. Add JS clock.
+4. Add JS generated date.
 5. Add images that sit outside the flow of the page.
   - Tire tracks in Kit List.
   - Bike in Introduction.
@@ -89,7 +89,7 @@ I used absolute positioning on the *#intro img* first which is at the start of t
 
 ### Issue: Getting the date to display as XX/XX/XXXX.
 
-I found how to get the clock working fairly easily but couldn't find a way to get it so that the date would appear with a 0 prefix, such as if it was the 2nd of March, it would appear as 2/3/2023, rather than 02/03/2023. I decided to make an *else if* clause that would use *string interpolation* to affix a 0 to a day if a single digit date, and the same for the month. I much preferred how this looked on the page.
+I found how to get the clock working fairly easily but couldn't find a way to get it so that the date would appear with a 0 prefix, such as if it was the 2nd of March, it would appear as 02/03/2023, rather than 2/3/2023. I decided to make an else if clause that would use string interpolation to affix a 0 to a day if a single digit date, and the same for the month. I much preferred how this looked on the page.
 
 **Original code:**
 ```javascript
@@ -116,7 +116,7 @@ if ( day <= 9 & month >= 10) {
 
 ### Issue: Getting some links centered in the navbar and others aligned left and right.
 
-I made a flexbar navbar and wanted to left align the logo, center the links, and right align the JS date. I couldn't figure out how to do this without setting fixed widths on each element. 
+I made a flexbox navbar and wanted to left align the logo, center the links, and right align the JS date. I couldn't figure out how to do this without setting fixed widths on each element. 
 
 Eventually I landed on a neat trick of setting *margin-left: auto* on the first of the centered links, and the JS date, this created exactly what I was after, without having to use fixed-widths. Without *margin-left*, the links would all be left aligned by default.
 
