@@ -27,7 +27,6 @@
     background-color: #fff;
     z-index: 99; /* nav displays above content at end of page */
     display: flex;
-    justify-content: space-between; 
     align-items: center; /* vertical alignment */    
   }
 
