@@ -71,7 +71,7 @@ I also discovered that rather than editing the bike image to remove the white ba
 
 I used absolute positioning on the *#intro img* first which is at the start of the page. When I came to do the tire tracks in the last section, *position: absolute* wasn't having the effect I hoped for and the tire tracks would appear at the beginning of the page. I again looked online and realised that I needed to add positioning to the parent container of the images section so that the tire tracks would be positioned in relation to the section:
 
-```
+```css
 #itinerary {
     width: 60%;
     margin: auto;
