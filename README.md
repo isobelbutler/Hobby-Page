@@ -20,7 +20,7 @@ I created the design on Figma, as shown below:
 
 ## Building
 
-I enjoyed making this project, I was already familiar with the language of HTML and CSS from when I self-taught myself, but knew that I needed to revisit it as my knowledge felt like it wasn't necessarily all joined together. Prior to starting this project I worked through most of the HTML and CSS sections of a Front-End Development course by Treehouse. This meant I found the building of the page fairly straight forward and so focused on trying to build it in a clean, logical manner.
+I enjoyed making this project, I was already fairly familiar with HTML and CSS from when I self-taught myself, but knew that I needed to revisit it as my knowledge felt like it wasn't necessarily all joined together. Before starting this project I worked through most of the HTML and CSS sections of a Front-End Development course by Treehouse. This meant I found the building of the page fairly straight forward and so focused on trying to build it in a clean, logical manner.
 
 1. Convert Figma design to a skeleton HTML layout.
   - Header/Navbar
