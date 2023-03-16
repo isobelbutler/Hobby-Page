@@ -30,13 +30,21 @@
     align-items: center; /* vertical alignment */    
   }
 
-  #logo {max-height: 2.5em;}
+  #logo {
+    max-height: 2.5em;
+  }
 
-  #topnav a, #topnav p {padding: 0 10px;}
+  #topnav a, 
+  #topnav p {
+    padding: 0 10px;
+  }
 
-  #topnav p:last-child {padding-right: 20px;}
+  #topnav p:last-child {
+    padding-right: 20px;
+  }
 
-  .nav-link, #clock {
+  .nav-link, 
+  #clock {
     margin-left: auto; /* great little way to align #clock center and .nav-link right  */ 
   }
   
@@ -44,11 +52,17 @@
 
   /* General */
 
-    h1, h2, h3, h4, p, a {
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    p, 
+    a {
       font-weight: 300;
     }  
 
-    h1, h3 {
+    h1, 
+    h3 {
       font-family: 'Frank Ruhl Libre', serif;
     }
 
@@ -57,7 +71,8 @@
       max-width: 600px;
     }
     
-    h2 {
+    h2, 
+    h4 {
       font-size: 2em;
       color: #1BC200;
     }
@@ -67,19 +82,16 @@
       font-size: 3em;
     }
 
-    h4 {
-      font-size: 2em;
-      color: #1BC200;
-    }
-
-    p, nav a {
+    p, 
+    nav a {
       font-size: 1.25em;
       line-height: 1.5;
       text-decoration: none;
       color: #000;
     }
 
-    a, nav a:hover {
+    a, 
+    nav a:hover {
       color: #1BC200;
       transition: 0.3s;
     }
@@ -97,7 +109,8 @@
       color: #000;
     }
 
-    #route h3, .border p {
+    #route h3, 
+    .border p {
       margin: 0; /* removes extra line-spacing w/o creating overlap when resizing page */
     }
 
@@ -105,7 +118,6 @@
       font-size: 1em;
     }
 
-    
 
 /* ---- SECTION STYLING ---- */
 
@@ -141,13 +153,16 @@
 
   #route_map {
     width: 100%;
-    padding: 50px 0;
   }
 
   #route h4 {
     width: 65%;
-    padding: 50px 0;
     margin: auto;  
+  }
+
+  #route, 
+  #route_map {
+    padding: 50px 0;
   }
 
   .route_boxes {
@@ -181,7 +196,6 @@
     position: relative;
   }
 
-
   /*  .wrapper and .column make 
       two equal columns */
   .wrapper { 
@@ -192,7 +206,6 @@
   .column {
     flex: 50%; 
     padding: 0 5%; 
-
   }
 
   #trackmarks {
@@ -216,11 +229,16 @@
       font-size: 6em;
     }
     
-    h2, h3 {
+    h2, 
+    h3 {
       font-size: 1.5em;
     }
 
-    h4, p, nav a, .wrapper p, footer p {
+    h4, 
+    p, 
+    nav a, 
+    .wrapper p, 
+    footer p {
       font-size: 1em;
     }
 
