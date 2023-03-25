@@ -251,6 +251,11 @@
       padding: 20px;
     }
 
+    #route, 
+    #route_map {
+    padding: 50px 20px;
+  }
+
     .route_boxes div {
       padding: 10px;
     }
